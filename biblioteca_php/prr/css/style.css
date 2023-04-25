@@ -1,0 +1,17 @@
+body{
+    background-color: azure;
+}
+.inregistrare{
+    margin-left:15%;
+    margin-right:10%;
+}
+.logare{
+    margin-left:15%;
+    margin-right:10%;
+}
+.Formular{
+    border-color: grey;
+    border-style: dashed;
+    margin-left: 15%;
+    margin-right:25%;
+}

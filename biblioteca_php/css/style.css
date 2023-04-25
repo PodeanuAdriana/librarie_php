@@ -1,0 +1,161 @@
+.logo{
+    width: 5%;
+    height: 15%;
+}
+body{
+    width:100%;
+}
+#nav-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 234,0.10);
+    z-index: 999;
+    position:sticky;
+    top:0;
+    left:0;
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* remove bullet points from the list*/
+#navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position:relative;
+}
+/*remove the underline on the link <a></a> */
+#navbar li a{
+    text-decoration:none;
+    font-size:12px;
+    font-weight: 600;
+    color: royalblue;
+    transition: 0.3s ease;
+}
+/*the link will change when I hover it*/
+/* here I put an underline under the link is active in that moment */
+#navbar li a:hover,
+#navbar li a.active {
+    color:cyan;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width:30%;
+    height:2px;
+    background-color: blue;
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+}
+#men1{
+   
+  background-image: url('img1.jpg');
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#men1 h4{
+    padding-bottom: 20px;
+    color:royalblue;
+}
+
+ #men1 p{
+    color:royalblue;
+ }
+ #men1 button{
+    background-image: url("buton.jpg");
+    background-color: transparent;
+    color:black;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+ }
+ .section-p1{
+    padding:40px 180px;
+ }
+ .section-m1{
+    margin:40px 0;
+ }
+ .cam1{
+    width: 18px;
+    height: 68px;
+ }
+ #prod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ #prod .prod-box img{
+    width: 100%;
+    
+    margin-bottom: 10px;
+ }
+
+ #prod .prod-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+ }
+ /* when I hover the box, it will reduce the box
+ shadow*/
+ #prod .prod-box :hover{
+    box-shadow: 10px 10px 54px rgb(29, 20, 212);
+ }
+ #prod{
+   background-color: lightpink;
+ }
+ #prod .prod-box h5{
+   display: inline-block;
+   padding: 9px 8px 6px 8px;
+   line-height: 1;
+   border-radius: 4px;
+   color:rgb(48, 32, 225);
+   background-color: rgb(135, 252, 252);
+ }
+ #prod .prod-box:nth-child(2) h5{
+     background-color:lightgray ;
+ }
+ #prod .prod-box:nth-child(3) h5{
+   background-color: rgb(253, 253, 219);
+ }
+ #prod .prod-box:nth-child(4) h5{
+   background-color: lightpink;
+ }
+ #mag1{
+   text-align: center;
+ }
+ #mag1 .carte{
+   width: 23%;
+   min-width: 250px;
+   padding: 10px 12px;
+   border: 1px solid grey;
+ }
+ .car{
+  
+   width: 23%;
+   min-width: 250px;
+   padding: 10px 12px;
+ 
+}

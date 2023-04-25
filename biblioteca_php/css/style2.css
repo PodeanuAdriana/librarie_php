@@ -1,0 +1,392 @@
+.logo{
+    width: 5%;
+    height: 15%;
+}
+body{
+    width:100%;
+}
+#nav-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 234,0.10);
+    z-index: 999;
+    position:sticky;
+    top:0;
+    left:0;
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* remove bullet points from the list*/
+#navbar li{
+    list-style-type: none;
+    padding: 0 20px;
+    position:relative;
+}
+/*remove the underline on the link <a></a> */
+#navbar li a{
+    text-decoration:none;
+    font-size:12px;
+    font-weight: 600;
+    color: royalblue;
+    transition: 0.3s ease;
+}
+/*the link will change when I hover it*/
+/* here I put an underline under the link is active in that moment */
+#navbar li a:hover,
+#navbar li a.active {
+    color:cyan;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width:30%;
+    height:2px;
+    background-color: blue;
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+}
+#mobile{
+    display:none;
+    align-items: center;
+}
+#men1{
+   
+  background-image: url('img.jpg');
+ 
+ height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#men1 h4{
+    padding-bottom: 20px;
+    color:royalblue;
+}
+
+ #men1 p{
+    color:royalblue;
+ }
+ #men1 button{
+    background-image: url("buton.jpg");
+    background-color: transparent;
+    color:black;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+ }
+ .section-p1{
+    padding:40px 180px;
+ }
+ .section-m1{
+    margin:40px 0;
+ }
+ button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px ;
+    color:lightcyan;
+    background-color: royalblue;
+    border-radius: 4px;
+    cursor:pointer;
+    border:navy;
+    outline: none;
+    transition:0.2s ;
+ }
+ .cam1{
+    width: 18px;
+    height: 68px;
+ }
+ #prod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ #prod .prod-box img{
+    width: 100%;
+    
+    margin-bottom: 10px;
+ }
+
+ #prod .prod-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+ }
+ /* when I hover the box, it will reduce the box
+ shadow*/
+ #prod .prod-box :hover{
+    box-shadow: 10px 10px 54px rgb(29, 20, 212);
+ }
+
+ #prod .prod-box h5{
+   display: inline-block;
+   padding: 9px 8px 6px 8px;
+   line-height: 1;
+   border-radius: 4px;
+   color:rgb(48, 32, 225);
+   background-color: rgb(135, 252, 252);
+ }
+ #prod .prod-box:nth-child(2) h5{
+     background-color:lightgray ;
+ }
+ #prod .prod-box:nth-child(3) h5{
+   background-color: rgb(253, 253, 219);
+ }
+ #prod .prod-box:nth-child(4) h5{
+   background-color: lightpink;
+ }
+ #mag1{
+   text-align: center;
+ }
+ #mag1 .carti-raft{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+ }
+ #mag1 .carte{
+   width: 23%;
+   min-width: 250px;
+   padding: 10px 12px;
+   border-radius: 20px;
+   border: 1px solid grey;
+   cursor:pointer;
+   box-shadow: 20px 20px 30px rgba(30, 20, 212, 0.4) ;
+    margin:15px 0;
+    transition:0.2s ease;
+    position:relative;
+}
+#mag1 .carte:hover{
+    box-shadow: 20px 20px 30px rgba(54, 46, 215, 0.512) ;
+
+}
+ #mag1 .carte img{
+  
+   width: 100%;
+   border-radius: 20px;  
+}
+#mag1 .carte .descri{
+    text-align: start;
+    padding: 10px 0;
+}
+#mag1 .carte .descri span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+#mag1 .carte .descri h5{
+    padding-top:  7px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#mag1 .carte .descri h6{
+    font-family: 'Times New Roman', Times, serif;
+}
+#mag1 .carte .descri i{
+    font-size: 12px;
+    color: rgb(248, 227, 37);
+}
+#mag1 .carte .descri h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:royalblue;
+}
+#mag1 .carte .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius:40px;
+    background-color: royalblue;
+    font-weight: 500;
+    color:lightcyan;
+    border:1px solid lightcyan;
+    position: absolute;
+    bottom:20px;
+    right:10px;
+
+}
+#mag1 .carte .cart1{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius:40px;
+    background-color: royalblue;
+    font-weight: 500;
+    color:lightcyan;
+    border:1px solid lightcyan;
+    position: absolute;
+    bottom:20px;
+    right:70px;
+
+}
+#banner {
+   display: flex; 
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-image: url("img2.jpg");
+   width: 100%;
+   height:40vh;
+   background-size: cover;
+   background-position: center;
+}
+#banner h2{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color:azure;
+    padding: 10px 0;
+}
+#banner button:hover{
+    background-color: lightpink;
+    color:crimson;
+}
+#newsletter {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+background-image: url("logback.jpg");
+background-position: 20% 30%;
+}
+#newsletter .newstext h4{
+    color:aliceblue;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+#newsletter .newstext p{
+    color:aliceblue;
+    font-size: 14px;
+   font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+#newsletter .forma{
+    display: flex;
+    width:40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: aquamarine;
+    color:royalblue;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/*footer .logo{
+    margin-bottom: 30px;
+   
+}*/
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin:0 0 8px 0;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+   flex-direction: column;
+align-items: flex-start;
+margin-bottom:20px ;}
+
+footer .imi{
+    width: 100%;
+    height: 70px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:rgba(92, 85, 225, 0.79);
+    margin:0 0 8px 0;
+}
+footer .follow{
+    margin-top:20px;
+}
+footer .follow i{
+   color: crimson;
+   padding-right: 4px;
+   cursor: pointer;
+}
+footer .follow i:hover,
+footer a:hover {
+    color:lightpink;
+}
+/* how can i make a website responsive */
+@media (max-width:779px) {
+    #navbar{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start; 
+        position:fixed;
+        top:0;
+        right:-300px;
+        height: 100vh;
+        width:300px;
+        background-color: aliceblue;
+        box-shadow: 0 40px 60px rgba(0, 0, 234,0.10);
+        padding: 80px 0 0 10px;
+        transition:0.03s;
+    }
+    #navbar.active{
+        right:0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display:flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:royalblue;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+       position: absolute;
+       top:30px;
+       left:30px;
+       color:royalblue;
+       font-size: 24px;
+    }
+}

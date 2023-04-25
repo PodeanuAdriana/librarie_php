@@ -1,0 +1,17 @@
+.ha1{
+    padding: 9px 8px 6px 8px ;
+    display: inline-block;
+    line-height: 1 ;
+    border-radius:4px;
+    color:rgb(48, 32, 225);
+    background-color: rgb(135, 252, 252);
+ }
+.ha2{
+    background-color:lightcoral ;
+ }
+ .ha3{
+    background-color: rgb(253, 253, 219);
+ }
+  .ha4{
+    background-color: lightpink;
+ }
